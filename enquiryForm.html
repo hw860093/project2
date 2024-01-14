@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnquiryForm</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body onload="displayMessage();">
+    <header>
+        <img id="headerLogo" src="./assets/imgs/logomark-2d.png" alt="header logo">
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./aboutUs.html" target="_blank">About Us</a></li>
+                <li><a href="./qualification.html" target="_blank">Qualification</a></li>
+                <li><a href="./enquiryForm.html">Enquiry Form</a></li>
+                <li><a href="./contactUs.html" target="_blank">Contact Us</a></li>
+                <li id="greet"></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div class="enquiryBanner">
+        <img id="enquiryBannerImg" src="./assets/imgs/pic4.png" alt="banner image">
+    </div>
+            
+    <div class="enquiryContent">
+        <h1>Enquiry Form</h1>
+        <p>Please enter your information and submit</p>
+
+        <div id="form">
+        <form id="enquiry" name="enquiry" action="#" onsubmit="return validateForm()" method="post" novalidate>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="type">Enquiry Type:</label>
+            <select id="type" name="EnquiryType" required>
+            <option value="general">General Questions</option>
+            <option value="current">Already Enrolled</option>
+            <option value="future">Other Enquiry</option>
+            </select><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+     
+    </div>
+
+    <footer>
+        <div id="footerTop">
+        <div id="footerLeft">
+            <img id="footerLogo" src="./assets/imgs/logoinline-white.png" alt="footer logo">
+        </div>
+        <div id="footerRight">
+            <p>Contact Us</p>
+            <p>19 Tanner Street, Carey Park, New South Wales 2429</p>
+            <p>(02) 4939 5050</p>
+            <p>GE@studywithus.com.au</p>
+        </div>
+        </div>
+
+        <div id="footerBottom">
+            <p id="footerContent">Gelos Enterprises would like to pay our respect and acknowledge Aboriginal and Torres Strait Islander Peoples as the Traditional Custodians of the Land, Rivers and Sea. We acknowledge and pay our respect to the Elders; past, present and emerging of all Nations.
+            <br>
+            &copy; 2023 Gelos Enterprises Pty. Ltd.
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
